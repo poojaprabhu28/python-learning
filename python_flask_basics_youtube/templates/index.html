@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Home page</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <!--p>Hello!</p>
+    <p>{{content}}</p>
+    <p>{{r}}</p-->
+    
+    {% for x in content %}        
+        {% if x == "tim" %}
+            <p>{{x}} yeah!</p>
+        {% else %}
+            <p>{{x}}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
